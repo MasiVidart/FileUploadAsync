@@ -24,7 +24,7 @@ Copy the files to your web application folder, go to Visual Studio and right cli
 ### Properties:
 | Name | Description |
 | - | - |
-| Posted File | The file submitted as FileUploadAsyncFile type |
+| PostedFile | The file submitted as FileUploadAsyncFile type |
 
 ### Methods:
 | Name | Description |
@@ -37,13 +37,13 @@ Copy the files to your web application folder, go to Visual Studio and right cli
 | FileUploadAsyncFile | WebApplicationName.FileUploadAsync | Name - File name. Extension included |
 | | | Data - File contents in base64 string format |
 | | | Extension - Takes the extension from the file name property |
-| | | GetBytes() - File contents in byte[] format |
+| | | GetBytes() - Get file contents in byte[] format |
 
 ### Guide:
 1. Register the user control in your .aspx file with your preferred TagPrefix and TagName.
 2. Include as follows:
 
-ASPX:
+**ASPX**:
 
 ```html
 <button type="button" onclick="fileUploadAsync_uploadFile();">Upload</button>
@@ -56,7 +56,7 @@ If you want to style the file upload, you can select it with CSS using **.file-u
 
 Accept attribute is optional.
 
-C# (.aspx.cs):
+**C#** (.aspx.cs):
 
 ```c#
 protected void UploadFile(object sender, EventArgs e)
@@ -71,7 +71,7 @@ protected void UploadFile(object sender, EventArgs e)
 4. Enjoy!
 
 ### Manual use Guide:
-If you don´t want the button to raise the postback for you, you can provide a callback to the **fileUploadAsync_uploadFile** function and do the postback when you decide to.
+If you don´t want the button to raise the postback for you, you can provide a callback to the **fileUploadAsync_uploadFile** function and do the postback when you decide it to.
 
 **Changes needed**:
 1. Change ASPX as follows:
@@ -79,7 +79,7 @@ If you don´t want the button to raise the postback for you, you can provide a c
 ```html
 <button type="button" onclick="fileUploadAsync_uploadFile(callback);">Upload</button>
 <asp:Button ID="btnFileUpload" runat="server" OnClick="btnFileUpload_Click" hidden />
-<uc:FileUploadAsync ID="fuFile" runat="server" Accept=".jpg" OnFileProcessed="UploadFile"></uc:FileUploadAsync>
+<uc:FileUploadAsync ID="fuFile" runat="server" Accept=".jpg"></uc:FileUploadAsync>
 ```
 
 2. Add a javascript function to your page:
