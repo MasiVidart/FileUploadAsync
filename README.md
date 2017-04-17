@@ -1,5 +1,5 @@
 # FileUploadAsync
-ASP.NET user control for uploading files asynchronous using update panels in web forms.
+ASP.NET user control for uploading files asynchronously using update panels in web forms and without the need of triggers.
 
 # Installation
 Copy the files to your web application folder, go to Visual Studio and right click the folder you want the user control → Add → Existing item → Select the .ascx file.
