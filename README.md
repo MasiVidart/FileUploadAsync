@@ -9,7 +9,7 @@ Copy the files to your web application folder, go to Visual Studio and right cli
 - Visual Studio HTML5 compatibility. If you are using VS 2010 or older, you may need to install an extension so it let you compile.
 - ScriptManager and UpdatePanel.
 
-# Browser compatibility:
+# Browser compatibility
 Since the user control uses HTML5 File System API to process the file on client side, it´s compatible with all major browsers:
 - IE 10+
 - Edge
