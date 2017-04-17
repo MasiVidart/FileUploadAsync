@@ -120,3 +120,6 @@ protected void btnFileUpload_Click(object sender, EventArgs e)
     // Same code as normal
 }
 ```
+
+# Possible issues
+1. You may encounter with problems if trying to upload huge files. For that you will have to set up your web.config file to limit the length of requests.
