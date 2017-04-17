@@ -19,7 +19,7 @@ Since the user control uses HTML5 File System API to process the file on client 
 However, it´s good to always have them up to date!
 
 # Possible issues
-You may encounter with problems if trying to upload huge files. For that you will have to set up your web.config file to limit the length of requests.
+You may encounter with problems if trying to upload huge files. For that you will have to set up your web.config file to limit the length of requests according to your needs.
 
 # Usage
 ### Attributes:
