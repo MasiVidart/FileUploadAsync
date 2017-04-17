@@ -50,6 +50,11 @@ However, it´s good to always have them up to date!
 
 ### Guide:
 1. Register the user control in your .aspx file with your preferred TagPrefix and TagName.
+
+```html
+<%@ Register TagPrefix="uc" TagName="FileUploadAsync" Src="~/FileUploadAsync.ascx" %>
+```
+
 2. Include as follows:
 
 **ASPX**:
