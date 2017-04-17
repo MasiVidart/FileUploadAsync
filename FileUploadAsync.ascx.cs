@@ -27,6 +27,8 @@ namespace WebApplication1
         {
             JavaScriptSerializer js = new JavaScriptSerializer() { MaxJsonLength = int.MaxValue };
             PostedFile = js.Deserialize<FileUploadAsyncFile>(hfFile.Value);
+
+            hfFile.Value = string.Empty;
         }
 
         public FileUploadAsyncFile PostedFile { get; private set; }
